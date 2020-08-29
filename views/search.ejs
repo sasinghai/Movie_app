@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style>
+			
+			form{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 50vh;
+			}
+			input:focus{
+				outline: none;
+				border: 1px solid rgb(88, 247, 49);
+			}
+
+			input[type="submit"]{
+				padding: 10px 20px;
+				margin-left: 10px;
+				background-color: rgb(200, 53, 39);
+				border: none;
+				color: rgb(255, 255, 255);
+
+			}
+			h1{
+				text-align:center;
+			}
+			body{
+				background-image:url("https://png.pngtree.com/thumb_back/fw800/back_our/20190617/ourmid/pngtree-colorful-film-shooting-poster-background-material-image_130221.jpg");
+				background-repeat: no-repeat; /* Do not repeat the image */
+  				background-size: cover;
+			}
+		}
+		</style>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+        <a class="navbar-brand" href="#">Movie Search</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            
+          </ul>
+        </div>
+    </div>
+    </nav>
+	<br>
+	<br>
+	<h1>Search For A Movie</h1>
+	<form action="/results" method="GET">
+    	<input type="text" placeholder="Search Movie" name="search" id="s-movie">
+    	<input type="submit">
+	</form>
+		
+</body>
+</html>
